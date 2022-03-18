@@ -1,0 +1,16 @@
+# main links links
+main:
+  - title: "Dataset List"
+    url: /database/
+
+  - title: "Add Dataset"
+    url: /talks/    
+
+  - title: "Full Survey"
+    url: /teaching/    
+        
+  - title: "Updates"
+    url: /year-archive/
+    
+  - title: "Github"
+    url: /cv/
