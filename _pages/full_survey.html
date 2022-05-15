@@ -26,9 +26,7 @@ author_profile: false
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-
-
-
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" type="text/javascript"></script>
     <!-- ✅ load DataTables ✅ -->
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/datatables/1.10.21/js/jquery.dataTables.min.js"
@@ -88,9 +86,6 @@ author_profile: false
 </html>
 
  <script type="module">
-if (typeof jQuery == 'undefined') {  
-  document.write('<script type="text/javascript" src=""https://code.jquery.com/jquery-3.2.1.min.js""></script>');
-}
 var $jq = jQuery.noConflict();
 
 import myArray from '../assets/standardization.json' assert {type: "json"};
