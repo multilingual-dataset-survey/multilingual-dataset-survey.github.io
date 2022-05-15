@@ -61,7 +61,7 @@ import myArray from '../assets/standardization.json';
 buildTable(myArray);
 
 function buildTable(data) {
-    var table = document.getElementById('myTable')
+    var table = document.getElementById('myTable');
 
     for (var i = 0; i < data.length; i++) {
 
@@ -83,8 +83,8 @@ function buildTable(data) {
                         <td>${data[i].creators}</td>
                         <td>${data[i].citations}</td>
                         <td>${data[i].in_huggingface}</td>
-                    </tr>`
-        table.innerHTML += row
+                    </tr>`;
+        table.innerHTML += row;
     }
 }
 
