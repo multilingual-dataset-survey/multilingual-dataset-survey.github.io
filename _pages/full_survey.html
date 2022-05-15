@@ -1,0 +1,68 @@
+---
+layout: archive
+title: "Full Survey"
+permalink: /full-survey/
+author_profile: false
+---
+
+{% include base_path %}
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Data Table</title>
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.12.0/css/jquery.dataTables.css">
+
+    <!-- Import bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <!-- Import Ajax -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- Import DataTable -->
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.12.0/js/jquery.dataTables.js"></script>
+</head>
+<body>
+    <table id="example" class="table" style="width:100%">
+        <thead>
+            <tr>
+                <th>Dataset Name</th>
+                <th>Title</th>
+                <th>Paper Link</th>
+                <th>Motivation</th>
+                <th>Task Type</th>
+                <th>Has Train Data</th>
+                <th>Size</th>
+                <th>Input Data Source</th>
+                <th>Original Language</th>
+                <th>Translation Used</th>
+                <th>Label Source</th>
+                <th>Publication Year</th>
+                <th>Published Venue</th>
+                <th>Reused Dataset</th>
+                <th>Creators</th>
+                <th>Citation</th>
+                <th>In Huggingface</th>
+            </tr>
+
+            <tbody id="myTable">
+
+            </tbody>
+        </thead>
+        
+    </table>
+
+    <script src="myscripts.js"></script>
+</body>
+</html>
+
+{% for post in site.pages %}
+  {% include archive-single.html %}
+{% endfor %}
