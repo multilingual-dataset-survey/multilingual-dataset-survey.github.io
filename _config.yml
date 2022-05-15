@@ -1,2 +1,9 @@
 theme: jekyll-theme-time-machine
-title: Multilingual Dataset Survey
+locale                   : "en-US"
+title                    : "Multilingual Dataset Survey"
+title_separator          : "-"
+name                     : &name "Multilingual Dataset Survey"
+description              : &description "personal description"
+url                      : "https://multilingual-dataset-survey.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+baseurl                  : "" # the subpath of your site, e.g. "/blog"
+repository               : "multilingual-dataset-survey.github.io"

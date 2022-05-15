@@ -67,8 +67,7 @@ permalink: /survey/
 </body>
 
  <script type="module">
-// import myArray from './standardization.json';
-var myArray = require('./standardization.json');
+import myArray from './standardization.json' assert {type: "json"};
 console.log(myArray);
 buildTable(myArray);
 
@@ -76,7 +75,6 @@ function buildTable(data) {
     var table = document.getElementById('myTable');
 
     for (var i = 0; i < data.length; i++) {
-
         var row =   `<tr>
                         <td>${data[i].dataset_name}</td>
                         <td>${data[i].title}</td>
