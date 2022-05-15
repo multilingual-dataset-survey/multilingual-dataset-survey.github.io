@@ -28,11 +28,11 @@ author_profile: false
     />
 
     <!-- ✅ load jQuery ✅ -->
-    <script
+    <!-- <script
       src="https://code.jquery.com/jquery-3.6.0.min.js"
       integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
       crossorigin="anonymous"
-    ></script>
+    ></script> -->
 
     <!-- ✅ load DataTables ✅ -->
     <script
@@ -93,6 +93,10 @@ author_profile: false
 </html>
 
  <script type="module">
+if (typeof jQuery == 'undefined') {  
+  document.write('<script type="text/javascript" src=""https://code.jquery.com/jquery-3.2.1.min.js""></script>');
+}
+
 import myArray from '../assets/standardization.json' assert {type: "json"};
 console.log(myArray);
 buildTable(myArray);
