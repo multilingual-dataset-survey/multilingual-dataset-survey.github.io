@@ -57,7 +57,8 @@ author_profile: false
 </body>
 
  <script type="module">
-import myArray from '../assets/standardization.json';
+import myArray from '../assets/standardization.json' assert {type: "json"};
+console.log(myArray)
 buildTable(myArray);
 
 function buildTable(data) {
