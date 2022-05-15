@@ -11,6 +11,7 @@
     "theme",
     "minimal"
   ],
+  "type": "module",
   "author": "Michael Rose",
   "license": "MIT",
   "bugs": {
