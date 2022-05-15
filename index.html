@@ -67,7 +67,8 @@ permalink: /survey/
 </body>
 
  <script type="module">
-import myArray from './standardization.json';
+// import myArray from './standardization.json';
+var myArray = require('./standardization.json');
 console.log(myArray);
 buildTable(myArray);
 
