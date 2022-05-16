@@ -7,11 +7,11 @@ author_profile: false
 
 {% include base_path %}
 
-<html lang="en">
+<!-- <html lang="en">
 <link rel="icon" href="data:;base64,iVBORw0KGgo=">
 <head> 
 
-    <!-- jQuery -->
+
   
     <script type="text/javascript" 
   
@@ -21,7 +21,6 @@ author_profile: false
   
     
   
-    <!-- DataTables CSS -->
   
     <link rel="stylesheet"
   
@@ -31,7 +30,6 @@ author_profile: false
   
     
   
-    <!-- DataTables JS -->
   
     <script src= 
   
@@ -43,13 +41,12 @@ author_profile: false
 
 <head>
     <meta charset="UTF-8">
-    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
    
 
     
-    <!-- <script src="https://code.jquery.com/jquery-3.2.1.min.js" type="text/javascript"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" type="text/javascript"></script>
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.12.0/css/jquery.dataTables.css">
     <script src="https://cdn.datatables.net/1.12.0/js/jquery.dataTables.min.js" type="text/javascript"></script> -->
     <!-- <link
@@ -84,7 +81,7 @@ author_profile: false
     <!-- Import DataTable -->
     <!-- <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.12.0/js/jquery.dataTables.js"></script> -->
     
-</head>
+<!-- </head>
 <body>
     <table id="example" class="display" style="width:100%">
         <thead>
@@ -115,9 +112,9 @@ author_profile: false
         
     </table>
 </body>
-</html>
+</html> -->
 
- <script type="module">
+ <!-- <script type="module">
 
 import myArray from '../assets/standardization.json' assert {type: "json"};
 console.log(myArray);
@@ -148,7 +145,7 @@ function buildTable(data) {
                     </tr>`;
         table.innerHTML += row;
     }
-}
+} -->
 
 // $(document).ready( function () {
 //     let currtable = new DataTable({data:'#example', scrollX:true});
@@ -158,4 +155,179 @@ $(document).ready(function () {
     $('#example').DataTable();
 });
 
-</script>
+<!-- </script> -->
+
+
+<html> 
+
+<head> 
+
+  <!-- jQuery -->
+
+  <script type="text/javascript" 
+
+          src="https://code.jquery.com/jquery-3.5.1.js"> 
+
+  </script> 
+
+  
+
+  <!-- DataTables CSS -->
+
+  <link rel="stylesheet"
+
+        href= 
+
+"https://cdn.datatables.net/1.10.23/css/jquery.dataTables.min.css"> 
+
+  
+
+  <!-- DataTables JS -->
+
+  <script src= 
+
+"https://cdn.datatables.net/1.10.23/js/jquery.dataTables.min.js"> 
+
+  </script> 
+
+</head> 
+
+<body> 
+
+  <h1 style="color: green;"> 
+
+    GeeksForGeeks 
+
+  </h1> 
+
+  <h3>DataTables scrollX Option</h3> 
+
+  
+
+  <!-- HTML table with random data -->
+
+  <table id="tableID" class="display nowrap"
+
+         style="width: 100%"> 
+
+    <thead> 
+
+      <tr> 
+
+        <th>Registration ID</th> 
+
+        <th>Full Name</th> 
+
+        <th>Age at Registration</th> 
+
+        <th>Full Address</th> 
+
+        <th>Phone Number</th> 
+
+      </tr> 
+
+    </thead> 
+
+    <tbody> 
+
+      <tr> 
+
+        <td>1</td> 
+
+        <td>Sam Fisher</td> 
+
+        <td>35</td> 
+
+        <td>Earth, Galaxy</td> 
+
+        <td>01234344043</td> 
+
+      </tr> 
+
+      <tr> 
+
+        <td>2</td> 
+
+        <td>Jack the Ripper</td> 
+
+        <td>30</td> 
+
+        <td>Earth, Galaxy</td> 
+
+        <td>0124334043</td> 
+
+      </tr> 
+
+      <tr> 
+
+        <td>3</td> 
+
+        <td>Reaper the Leviathan</td> 
+
+        <td>45</td> 
+
+        <td>4546B</td> 
+
+        <td>0189994043</td> 
+
+      </tr> 
+
+      <tr> 
+
+        <td>4</td> 
+
+        <td>Ghost the Leviathan</td> 
+
+        <td>105</td> 
+
+        <td>4546B</td> 
+
+        <td>0123489043</td> 
+
+      </tr> 
+
+      <tr> 
+
+        <td>5</td> 
+
+        <td>Robby the Robber</td> 
+
+        <td>19</td> 
+
+        <td>Mars</td> 
+
+        <td>68898988</td> 
+
+      </tr> 
+
+    </tbody> 
+
+  </table> 
+
+  <script> 
+
+  
+
+    // Initialize the DataTable 
+
+    $(document).ready(function () { 
+
+      $('#tableID').DataTable({ 
+
+  
+
+        // Enable the horizontal scrolling 
+
+        // of data in DataTable 
+
+        scrollX: true 
+
+      }); 
+
+    });  
+
+  </script> 
+
+</body> 
+
+</html>
