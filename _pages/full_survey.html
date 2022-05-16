@@ -118,7 +118,7 @@ function buildTable(data) {
 }
 
 $(document).ready( function () {
-    let currtable = new DataTable('#example');
+    let currtable = new DataTable({data:'#example', scrollX:true});
     currtable.scrollX = true;
 } );
 </script>
