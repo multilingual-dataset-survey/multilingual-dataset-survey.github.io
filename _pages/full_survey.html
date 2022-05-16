@@ -114,9 +114,6 @@ function buildTable(data) {
 }
 
 $(document).ready( function () {
-    $('#example').DataTable({
-        fixHeader:true, 
-        autoFill:true
-    });
+    new DataTable('#example')
 } );
 </script>
