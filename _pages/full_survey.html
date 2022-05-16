@@ -21,7 +21,11 @@ author_profile: false
     <script src="https://cdn.datatables.net/1.12.0/js/jquery.dataTables.min.js" type="text/javascript"></script> -->
     <link
       rel="stylesheet"
-      href="https://cdn.datatables.net/1.12.0/css/jquery.dataTables.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/css/foundation.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.datatables.net/1.12.0/css/dataTables.foundation.min.css"
     />
 
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" type="text/javascript"></script>
@@ -49,7 +53,7 @@ author_profile: false
     
 </head>
 <body>
-    <table id="example" class="table" style="width:100%">
+    <table id="example" class="display" style="width:100%">
         <thead>
             <tr>
                 <th>Dataset Name</th>
@@ -114,6 +118,7 @@ function buildTable(data) {
 }
 
 $(document).ready( function () {
-    new DataTable('#example')
+    let table = new DataTable('#example');
+    
 } );
 </script>
