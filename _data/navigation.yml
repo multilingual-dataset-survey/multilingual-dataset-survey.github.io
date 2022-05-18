@@ -1,7 +1,7 @@
 # main links links
 main:
   - title: "Dataset List"
-    url: /database/
+    url: /datalist/
 
   - title: "Add Dataset"
     url: https://forms.gle/fkYAvNUXyqTAZQoB9 
