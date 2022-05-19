@@ -114,6 +114,7 @@ function buildTable(data) {
 }
 
 $(document).ready( function () {
-    new DataTable('#example')
+    $.noConflict();
+    var table = $('#example').DataTable();
 } );
 </script>
