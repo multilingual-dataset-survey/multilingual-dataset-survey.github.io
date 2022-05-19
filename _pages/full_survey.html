@@ -64,7 +64,6 @@ author_profile: false
                 <th>Published Venue</th>
                 <th>Reused Dataset</th>
                 <th>Creators</th>
-                <th>Citation</th>
                 <th>In Huggingface</th>
             </tr>
 
@@ -103,7 +102,6 @@ function buildTable(data) {
                         <td>${data[i].published_venue}</td>
                         <td>${data[i].reused_dataset}</td>
                         <td>${data[i].creators}</td>
-                        <td>${data[i].citations}</td>
                         <td>${data[i].in_huggingface}</td>
                     </tr>`;
         table.innerHTML += row;
