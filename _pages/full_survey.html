@@ -115,6 +115,8 @@ function buildTable(data) {
 
 $(document).ready( function () {
     $.noConflict();
-    var table = $('#example').DataTable();
+     $('#example').dataTable( {
+        "scrollX": true
+    });
 } );
 </script>
