@@ -90,7 +90,7 @@ function buildTable(data) {
         var row =   `<tr>
                         <td>${data[i].dataset_name}</td>
                         <td>${data[i].title}</td>
-                        <td>${data[i].paper_link}</td>
+                        <td><a href=${data[i].paper_link}>Paper Link</a></td>
                         <td>${data[i].motivation}</td>
                         <td>${data[i].task_type}</td>
                         <td>${data[i].has_train_data}</td>
