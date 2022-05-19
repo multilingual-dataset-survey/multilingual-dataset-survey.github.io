@@ -25,9 +25,6 @@ author_profile: false
     />
 
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" type="text/javascript"></script>
-    <!-- <script>
-        $.noConflict();
-    </script> -->
 
     <!-- ✅ load DataTables ✅ -->
   
@@ -116,7 +113,9 @@ function buildTable(data) {
 $(document).ready( function () {
     $.noConflict();
      $('#example').dataTable( {
-        "scrollX": true
+        "scrollX": true,
+        select: true, 
+        fixedHeader: true,
     });
 } );
 </script>
