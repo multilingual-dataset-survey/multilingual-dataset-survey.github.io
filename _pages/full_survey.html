@@ -83,9 +83,8 @@ function buildTable(data) {
 
     for (var i = 0; i < data.length; i++) {
         var row =   `<tr>
-                        <td>${data[i].dataset_name}</td>
-                        <td>${data[i].title}</td>
-                        <td><a href=${data[i].paper_link}>Paper Link</a></td>
+                        <td><a href=${data[i].data_link}>${data[i].dataset_name}</td>
+                        <td><a href=${data[i].paper_link}>${data[i].title}</td>
                         <td>${data[i].motivation}</td>
                         <td>${data[i].task_type}</td>
                         <td>${data[i].has_train_data}</td>
