@@ -68,11 +68,15 @@ author_profile: false
 </body>
 </html>
 
- <script type="module">
+<script type="module">
 
-import myArray from '../assets/standardization.json' assert {type: "json"};
-console.log(myArray);
-buildTable(myArray);
+async function getArray(){
+    console.log('calling');
+    const response  = await fetch('../assets/standardization.json');
+    const data = await response.json();
+    await buildTable(data);
+    return data;
+}
 
 function buildTable(data) {
     var table = document.getElementById('myTable');
@@ -98,14 +102,16 @@ function buildTable(data) {
                     </tr>`;
         table.innerHTML += row;
     }
-}
-
-$(document).ready( function () {
-    $.noConflict();
-     $('#example').dataTable( {
+    $('#example').dataTable( {
         "scrollX": true,
         select: true, 
         fixedHeader: true,
     });
+}
+
+$(document).ready( function () {
+    const myArray = getArray();
+    console.log(typeof(myArray));
+    $.noConflict();
 } );
 </script>
