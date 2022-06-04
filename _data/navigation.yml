@@ -4,7 +4,7 @@ main:
     url: /datalist/
 
   - title: "Add Dataset"
-    url: https://forms.gle/fkYAvNUXyqTAZQoB9 
+    url: /add_dataset/
 
   - title: "Full Survey"
     url: /full-survey/ 
