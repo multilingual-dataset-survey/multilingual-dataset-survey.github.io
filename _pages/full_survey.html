@@ -64,16 +64,28 @@ author_profile: false
 <body>
     <button type="button" class="collapsible">Click to See the Explanation for Each Aspect and Category in Our Annotation Scheme</button>
     <div class="content">
-    <h3>Motivation</h3>
-    <p><strong>cross-lingual transfer</strong>, <strong>single task (multilingual) w/ ML training</strong>, <strong>single task (single lang)</strong>, <strong>multi-task (single lang)</strong></p>
-    <h3>Task Type</h3>
+    <h2>Motivation</h2>
+    <p>
+        <strong>cross-lingual transfer</strong> (evaluate NLP system trained on one langauge on other languages), 
+        <strong>single task (multilingual) w/ ML training</strong> (improve the performance of a particular task 
+        and cover multiple language), 
+        <strong>single task (single lang)</strong> (improve the performance of a particular task and focus on a single, Non-English language), 
+        <strong>multi-task (single lang)</strong> (test models for a particular language on many tasks, often re-using existing datasets)</p>
+    <h2>Task Type</h2>
     <p>The task type that the dataset addresses: <br>
-        <strong>classification (sentiment analysis)</strong>, <strong>classification (sentence pair)</strong>, <strong>classification (other)</strong>, <strong>QA (w/ retrieval)</strong>, 
-        <strong>QA (machine reading)</strong>, <strong>structured prediction</strong>, <strong>sequence tagging</strong>, 
-        <strong>generation (summarization)</strong>, <strong>generation (other)</strong>, <strong>other</strong></p>
-    <h3>Size</h3>
+        <strong>classification (sentiment analysis)</strong>, 
+        <strong>classification (sentence pair)</strong>,
+        <strong>classification (other)</strong>, 
+        <strong>QA (w/ retrieval)</strong>, 
+        <strong>QA (machine reading)</strong>, 
+        <strong>structured prediction</strong>, 
+        <strong>sequence tagging</strong>, 
+        <strong>generation (summarization)</strong>, 
+        <strong>generation (other)</strong>, 
+        <strong>other</strong></p>
+    <h2>Size</h2>
     <p> <strong>less than 100</strong>, <strong>100 ~ 1000</strong>, <strong>1000 ~ 10K</strong>, <strong>greater than 10K</strong></p>
-    <h3>Input Data Source</h3>
+    <h2>Input Data Source</h2>
     <p>The source of input text of the dataset, multiple sources allowed: <br>
          <strong>annotated (authors, linguists)</strong> (manually annotation by domain experts),  
          <strong>crowdsourced</strong> (manual annotation by crowdworkers), 
@@ -84,30 +96,30 @@ author_profile: false
          <strong>web</strong> (sources other than commercial websites and Wikipedia), 
          <strong>Wikipedia</strong> (wikipedia text, wikidump, wikidata.etc), 
          <strong>not mentioned</strong></p>
-    <h3>Original Language</h3>
+    <h2>Original Language</h2>
     <p>Language where the input text is collected: <br>
         <strong>English</strong>, 
         <strong>its own language</strong> (language of the dataset), 
         <strong>other language (languages that are not included in the dataset and is not English)</strong>, 
         <strong>both</strong> (both English and its own language), 
         <strong>not mentioned</strong></p>
-    <h3>Label Source</h3>
+    <h2>Label Source</h2>
     The source of the label, multiple sources allowed: <br> 
         <strong>annotated (authors, linguists)</strong> (manually annotation by domain experts),  
          <strong>crowdsourced</strong> (manual annotation by crowdworkers), 
          <strong>automatically induced </strong>(automatically aligned or deduced from labeled or unlabeled data
         (e.g., bullets points in news as summary)), <strong>curated linguistic resources </strong> (derived from curated linguistic resources (e.g., WordNet)), 
     <strong>not mentioned</strong></p>
-    <h3>Published Venue</h3>
+    <h2>Published Venue</h2>
     <p>The published venue of the paper: <br>
         ACL, EMNLP, NAACL, LREC, *ACL Workshop, Findings, NeurIPS Datasets and Benchmarks Track, arXiv, N/A</p>
-    <h3>Reused Dataset</h3>
+    <h2>Reused Dataset</h2>
     <p>Whether they reused any dataset, if yes, what language is the reused dataset: <br>
         <strong>Yes-Eng </strong> (Reuse English datasets), 
         <strong>Yes-other-lang</strong> (Reuse dataset in other languages (including the languages of the new dataset)), 
         <strong>Yes-Eng & other-lang</strong> (reused dataset in both English and other languages), 
         <strong>No</strong> (does not reuse any datset)</p>
-    <h3>Creators</h3>
+    <h2>Creators</h2>
     <p>Who creates the dataset: <br>
         <strong>industry</strong>, 
         <strong>individual researchers</strong> (usually the joint efforts of many people to create a specific language's benchmark datsets), 
