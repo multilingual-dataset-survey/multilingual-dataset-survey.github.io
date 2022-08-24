@@ -251,7 +251,6 @@ function buildTable(data) {
         select: true, 
         fixedHeader: true,
         initComplete: function () {
-            // Apply the search
             this.api()
                 .columns()
                 .every(function () {
@@ -263,14 +262,12 @@ function buildTable(data) {
                         }
                     });
                 });
-        },
+        }
     });
 
 }
 
 $(document).ready( function () {
-    // Setup - add a text input to each footer cell
-    console.log($('#example thead th'))
     $('#example tfoot th').each(function () {
         var title = $(this).text();
         $(this).html('<input type="text" placeholder="Search ' + title + '" />');
@@ -278,5 +275,6 @@ $(document).ready( function () {
     const myArray = getArray();
     console.log(typeof(myArray));
     $.noConflict();
-} );
+});
+
 </script>
