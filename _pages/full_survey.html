@@ -62,8 +62,27 @@ author_profile: false
             <tbody id="myTable">
 
             </tbody>
-        </thead>
-        
+        </thead>  
+        <tfoot>
+            <tr>
+                <th>Dataset Name</th>
+                <th>Title</th>
+                <th>Paper Link</th>
+                <th>Motivation</th>
+                <th>Task Type</th>
+                <th>Has Train Data</th>
+                <th>Size</th>
+                <th>Input Data Source</th>
+                <th>Original Language</th>
+                <th>Translation Used</th>
+                <th>Label Source</th>
+                <th>Publication Year</th>
+                <th>Published Venue</th>
+                <th>Reused Dataset</th>
+                <th>Creators</th>
+                <th>In Huggingface</th>
+            </tr>
+        </tfoot>  
     </table>
 </body>
 </html>
@@ -102,14 +121,36 @@ function buildTable(data) {
                     </tr>`;
         table.innerHTML += row;
     }
+
     $('#example').dataTable( {
         "scrollX": true,
         select: true, 
         fixedHeader: true,
+        initComplete: function () {
+            // Apply the search
+            this.api()
+                .columns()
+                .every(function () {
+                    var that = this;
+ 
+                    $('input', this.footer()).on('keyup change clear', function () {
+                        if (that.search() !== this.value) {
+                            that.search(this.value).draw();
+                        }
+                    });
+                });
+        },
     });
+
 }
 
 $(document).ready( function () {
+    // Setup - add a text input to each footer cell
+    console.log($('#example thead th'))
+    $('#example tfoot th').each(function () {
+        var title = $(this).text();
+        $(this).html('<input type="text" placeholder="Search ' + title + '" />');
+    });
     const myArray = getArray();
     console.log(typeof(myArray));
     $.noConflict();
