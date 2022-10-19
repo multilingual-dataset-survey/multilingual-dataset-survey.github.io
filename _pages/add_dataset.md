@@ -5,7 +5,7 @@ permalink: /add_dataset/
 author_profile: false
 ---
 
-<!-- # Add a new dataset to the survey -->
+## Add a new dataset to the survey
 1. Add a new json object at the end of `assets/standardization.json`
 2. Make sure your json object contains the following field:
 ```
@@ -31,7 +31,7 @@ author_profile: false
 ```
 3. Create a new pull request at [our github repository](https://github.com/multilingual-dataset-survey/multilingual-dataset-survey.github.io) with prefix: "New Dataset" with your dataset name. 
 
-# Modify an existing dataset's entry in the survey
+## Modify an existing dataset's entry in the survey
 1. Find the existing dataset's entry in `assets/standardization.json` that you want to correct
 2. Modify the json object and make sure your object follows the above scheme
 3. Create a new pull request at [our github repository](https://github.com/multilingual-dataset-survey/multilingual-dataset-survey.github.io) with prefix: "Modify Existing Dataset" with your dataset name, and state the reason that you need to make such modification in the PR description. 

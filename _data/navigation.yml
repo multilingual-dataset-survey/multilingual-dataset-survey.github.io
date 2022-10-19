@@ -1,7 +1,5 @@
 # main links links
 main:
-  - title: "Dataset List"
-    url: /datalist/
 
   - title: "Add Dataset"
     url: /add_dataset/
