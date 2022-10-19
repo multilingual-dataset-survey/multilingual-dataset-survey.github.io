@@ -5,7 +5,7 @@ permalink: /add_dataset/
 author_profile: false
 ---
 
-# Add a new dataset to the survey
+<!-- # Add a new dataset to the survey -->
 1. Add a new json object at the end of `assets/standardization.json`
 2. Make sure your json object contains the following field:
 ```
