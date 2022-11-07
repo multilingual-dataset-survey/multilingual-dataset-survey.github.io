@@ -16,5 +16,7 @@ We also have macro and micro-level suggestions such as funding suggestion, direc
 
 If you think our work is useful, please cite [citation]. If you want to modify an existing dataset’s entry, add, or delete a dataset, please see [tab link] to create a pull request in our github repository. If you have further questions, please contact us at [email]. We are more than happy to assist you in creating a new multilingual dataset as well as helping you to contribute to our survey!
 
+<script src="https://gist.github.com/trina731/175fccc9a431704378ff131d7ee85112.js"></script>
+
 *Dataset: By “dataset”, 
 *Each covering at least one non-English language: [answer reviewer #2]
