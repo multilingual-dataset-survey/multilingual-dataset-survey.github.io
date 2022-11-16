@@ -16,5 +16,7 @@ We also have macro and micro-level suggestions such as funding suggestion, direc
 
 If you think our work is useful, please cite [citation]. If you want to modify an existing dataset’s entry, add, or delete a dataset, please see [tab link] to create a pull request in our github repository. If you have further questions, please contact us at [email]. We are more than happy to assist you in creating a new multilingual dataset as well as helping you to contribute to our survey!
 
-*Dataset: By “dataset”, 
+*Dataset: We count only labeled, text-only multilingual NLP datasets in this survey. Unlabeled data such as parallel corpora, machine translation, and multimodal datasets are not included. See paper for further details on dataset scope.
+
+
 *Each covering at least one non-English language: [answer reviewer #2]
