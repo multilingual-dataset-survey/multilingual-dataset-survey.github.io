@@ -22,6 +22,7 @@ author_profile: false
     "translation": {'YES'/'NO'}, 
     "label_source": {'Annotated (authors, linguists)', 'Automatically induced', 'Crowdsourced','Derived from linguistic resources (wordnet, etc)'}, # If your data has multiple label sources, please use '&' to connect all of them
     "publication_year": <public year>, 
+    "languages": {all languages in ISO 639-1 Language Code}, 
     "published_venue": <published venue>, 
     "reused_dataset": {'YES (English)' / 'YES (other language)' / 'NO'}, 
     "creators": {'combination of university and industry', 'university', 'industry', 'individual researchers'}, 
